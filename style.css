@@ -19,6 +19,7 @@
 }
 .text-light-gray{
     color:#727272;
+    line-height:25px;
 }
 .bg-light{
     background-color:rgba(255, 144, 14, 0.1);
@@ -30,12 +31,12 @@
     font-weight: 600;
     font-size: 1.2em;
     cursor:pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     border:none;
     margin-bottom:30px;
 }
 main{
-    max-width:1200px;
+    max-width:1400px;
     width: 100%;
     margin:0 auto;
 }
@@ -43,7 +44,11 @@ main{
     font-size:2rem;
     font-weight: 700;
 }
-
+.feature-card .featured-title{
+    /*font-weight and size is not working*/
+   font-weight:400;
+   font-size:16px; 
+}
 /*header styles*/
 
 
@@ -69,6 +74,9 @@ main{
     margin:0 auto;
 }
 /*banner related styles*/
+header{
+    margin-bottom:50px;
+}
 .banner-content{
     max-width:1400px;
     margin: 0,auto;
@@ -93,15 +101,60 @@ main{
     gap:10px;
     
 }
-main{
-    margin:30px 0px 0px 0px;
-}
 
 .features{
     margin-left: 50px;
 }
 #quick-list{
     font-weight:500;
+}
+/*features you will love section related style*/
+.features-u-will-love div h4{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.features-u-will-love{
+    margin-top:50px;
+    gap:30px;
+
+}
+#feature-section-sidebar{
+border-left: 5px solid  #ff900e;
+padding-left:20px;
+
+}
+.feature-card-group{
+    margin-right:5px;
+}
+.feature-card{
+    padding:5px 6px 10px 3px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom:50px;
+    border-radius:8px;
+}
+.feature-card.feature-title{
+    font-weight: 600;
+    font-size:1.25rem;
+
+}
+/*lady-architect*/
+#lady-architect{
+margin-top:18px;    
+margin-right:9px;
+margin-left:9px;
+width:670px;
+
+}
+#experience-badge{
+    padding:30px 35px;
+    font-size:1.4rem;
+    font-weight:500;
+    margin-left:-33px;
+    margin-top:-200px;
+}
+#experience-year{
+    font-size:2.4rem;
+    font-weight:600;
 }
 /*some-facts related style*/
 .facts-container{
