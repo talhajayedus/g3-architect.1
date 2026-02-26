@@ -107,13 +107,13 @@ main{
 .facts-container{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
-    margin-left:7.3%;
+    margin-left:9.9%;
 }
 .fact-card{
     border: 1px solid #ff900e;
     border-radius:8px;
-    height:240px;
-    width:240px;
+    height:200px;
+    width:200px;
     text-align:center;
     align-items:center;
     justify-content:center;
@@ -130,6 +130,36 @@ main{
     font-weight: 600;
     margin-top:15px;
     margin-bottom:10px;
+}
+/*our-sponsor related styles*/
+.sponsor-info{
+    max-width:540px;
+    margin: 50px auto;
+    text-align:center;
+}
+.sponsor-partners{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.sponsor-partners img{
+    filter:grayscale(100%);
+    transition: filter 0.3s ease;
+}
+/*
+ .sponsor-partners img
+
+ filter:grayscale(100%) -this  turn any color image into gray image
+ & 
+
+ .sponsor-partners img:hover 
+
+   img:hover{filter: grayscale(0%);}-this is for hover effect.
+*/
+.sponsor-partners img:hover{
+     filter: grayscale(0%);
 }
 /*responsive media query*/
 @media screen and (max-width:576px)
@@ -149,14 +179,17 @@ main{
         justify-content: center;
     }
     .team-img,
-    .facts-container
+    .facts-container,
+    .sponsor-partners
     {
         grid-template-columns: repeat(1, 1fr);
         margin-left:10px;
     }
-    .facts-container{
+    .facts-container,
+    .sponsor-partners
+    {
         justify-items:center;
-        gap: 24px;
+        gap: 30px;
     }
     .features{
         
@@ -171,5 +204,12 @@ main{
    }
    .features{
     margin-left:50px;
+   }
+   .facts-container,
+   .sponsor-partners{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:50px;
+    justify-items:center;
    }
 }
