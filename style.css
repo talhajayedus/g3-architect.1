@@ -70,25 +70,29 @@ main{
    
 }
 .navbar,.banner{
-    max-width: 1200px;
+    width:100%;
+    max-width: 1000px;
     margin:0 auto;
 }
+
 /*banner related styles*/
 header{
+    width:100%;
     margin-bottom:50px;
+    margin-right:10px;
 }
 .banner-content{
     max-width:1400px;
-    margin: 0,auto;
+    margin: 0 auto;
     text-align:center;
 }
 .banner-title{
     font-weight:700;
-    font-size:4rem;
+    font-size:3rem;
 }
 .banner-image{
     width:100%;
-    margin-bottom:35px;
+    margin-bottom:35px ;
 }
 /*main section related styles*/
 .teams{
@@ -203,8 +207,7 @@ margin-left:9px;
     transition: filter 0.3s ease;
 }
 footer{
-    max-width: 1000px;
-    width:100%;
+    width:900px;
     height:60px;
     margin:0 auto 20px auto;
     background-color:#FFF4E7;
@@ -231,6 +234,11 @@ footer p{
 /*responsive media query*/
 @media screen and (max-width:576px)
 {
+    
+    header{
+        width:460px;
+        
+    }
     .navbar, 
     .nav-links,
     .teams,
@@ -240,7 +248,7 @@ footer p{
     }
     main{
         max-width:350px;
-        margin:0 auto;
+        margin:0px;
     }
     .teams{
         align-items: center;
@@ -270,6 +278,16 @@ footer p{
     #experience-badge{
         margin-top:20px;
         margin-left:90px;
+    }
+    footer{
+        margin:0px 0px 0px 30px;
+        width:400px;
+        height:56px;
+        line-height:20px;
+
+    }
+    footer p{
+        padding:10px;
     }
 }
 
